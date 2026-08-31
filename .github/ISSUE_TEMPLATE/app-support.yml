@@ -1,0 +1,49 @@
+name: SINE FLU app support
+description: Report a bug, ask a gameplay question, or suggest an improvement.
+title: "[Support] "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for playing SINE FLU. This request will be public. Do not include passwords, phone numbers, addresses, or other personal information.
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request type
+      options:
+        - Bug report
+        - Gameplay or controls question
+        - Feedback or feature request
+        - Privacy question
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      description: Find this on the App Store product page, for example 1.0.0.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: iPhone model and iOS version
+      placeholder: iPhone 15, iOS 26.0
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Tell us what happened, what you expected, and how to reproduce it. Do not include personal information.
+      placeholder: Describe your question or issue here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: public_notice
+    attributes:
+      label: Public information notice
+      options:
+        - label: I understand this request is public and have not included personal information.
+          required: true
