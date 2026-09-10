@@ -23,15 +23,15 @@ body:
     id: app_version
     attributes:
       label: App version
-      description: Find this on the App Store product page, for example 1.0.0.
+      description: Find this on the App Store or Google Play product page, for example 1.0.0.
       placeholder: 1.0.0
     validations:
       required: true
   - type: input
     id: device
     attributes:
-      label: iPhone model and iOS version
-      placeholder: iPhone 15, iOS 26.0
+      label: Device model and OS version
+      placeholder: iPhone 15, iOS 26.0 or Pixel 7, Android 16
   - type: textarea
     id: details
     attributes:
